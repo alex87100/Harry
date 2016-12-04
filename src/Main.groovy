@@ -10,9 +10,12 @@ class Main {
         books.push(b1)
         books.push(b2)
         books.push(b3)
+        books.push(new  Book("H1","2"))
+        books.push(new  Book("H2","2"))
+        books.push(new  Book("H1","2"))
 
         def shopping = new Books(books)
-        shopping.printBooks()
+        //shopping.printBooks()
         println(shopping.finalPrice())
         }
 }

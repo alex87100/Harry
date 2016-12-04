@@ -29,18 +29,21 @@ class Books {
         for(int i = 0; i < series.size(); i++) {
             ArrayList<String> names = new ArrayList<String>();
             String curr = series[i]
-
+            println(curr)
             for(int j = 0; j < books.size(); j++) {
                 if(curr == books[j].getSerie()) {
-                    println(books[j].getSerie() + books[j].getName())
+                    //println(books[j].getSerie() + books[j].getName())
                     names.add(books[j].getName())
                 }
-                if(names.size()>=3) {
-                    discount = ((10 * result) / 100)
-                }
+            }
+            names.unique()
+            for(int k = 0; k < names.size(); k++) {
+                println(names[k])
+            }
+            if(names.size()>=3) {
+                discount = ((10 * result) / 100)
             }
         }
-
         return result-discount;
     }
 }
