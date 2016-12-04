@@ -13,11 +13,11 @@ class Books {
     }
 
     double finalPrice() {
-        double result = 0;
-        double discount = 0;
+        double result = 0
+        double discount = 0
 
         for(int i = 0; i < books.size(); i++) {
-            result+=7;
+            result+=7
         }
 
         ArrayList<Integer> series = new ArrayList<String>();
